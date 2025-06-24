@@ -1,0 +1,18 @@
+Manual Install of AWS CLI v2 in Ubuntu Instance
+# 1. Update packages
+sudo apt update
+
+# 2. Install required tools
+sudo apt install unzip curl -y
+
+# 3. Download the AWS CLI v2 installer
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+# 4. Unzip the installer
+unzip awscliv2.zip
+
+# 5. Run the installer
+sudo ./aws/install
+
+# 6. Verify the install
+aws --version
